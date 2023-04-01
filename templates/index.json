@@ -67,7 +67,7 @@
       }
     },
     "mg_home_main": {
-      "type": "mg__home-main",
+      "type": "mg_home-main",
       "settings": {
       }
     }
