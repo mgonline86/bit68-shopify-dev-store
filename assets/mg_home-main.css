@@ -1,3 +1,10 @@
+.overlay-container:hover .overlay-text{
+    visibility: visible;
+    opacity: 1;
+}
+
 .overlay-text{
     background-color: rgba(128, 128, 128, 0.5);
+    opacity: 0;
+    visibility: hidden;
 }
