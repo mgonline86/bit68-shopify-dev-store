@@ -1,17 +1,12 @@
-.overlay-container,
-.overlay-text,
-.overlay-container img{
-   transition: all .4s ease-in;
-    -webkit-transition: all .4s ease-in;
-    -moz-transition: all .4s ease-in;
-    -o-transition: all .4s ease-in;
-}
-
 .overlay-container{
     overflow: hidden;
 }
 
 .overlay-container img{
+    transition: transform .4s linear;
+    -webkit-transition: transform .4s linear;
+    -moz-transition: transform .4s linear;
+    -o-transition: transform .4s linear;
     transform: scale(1);
     -webkit-transform: scale(1);
 }
