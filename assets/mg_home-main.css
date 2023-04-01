@@ -1,7 +1,17 @@
+.overlay-container img{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+}
+
+.overlay-container:hover img{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+
 .overlay-container:hover .overlay-text{
     visibility: visible;
     opacity: 1;
-}
+}    
 
 .overlay-text{
     background-color: rgba(128, 128, 128, 0.5);
