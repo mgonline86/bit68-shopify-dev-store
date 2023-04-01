@@ -1,7 +1,13 @@
 {
   "sections": {
+    "mg_home_main": {
+      "type": "mg_home-main",
+      "settings": {
+      }
+    },
     "image_banner": {
       "type": "image-banner",
+      "disabled": true,
       "blocks": {
         "heading": {
           "type": "heading",
@@ -41,6 +47,7 @@
     },
     "featured_collection": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Featured products",
         "heading_size": "h2",
@@ -64,11 +71,6 @@
         "swipe_on_mobile": false,
         "padding_top": 44,
         "padding_bottom": 36
-      }
-    },
-    "mg_home_main": {
-      "type": "mg_home-main",
-      "settings": {
       }
     }
   },
