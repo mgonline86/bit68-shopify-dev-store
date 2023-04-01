@@ -1,10 +1,10 @@
 .overlay-container,
 .overlay-text,
 .overlay-container img{
-   transition: all .4s linear;
-    -webkit-transition: all .4s linear;
-    -moz-transition: all .4s linear;
-    -o-transition: all .4s linear;
+   transition: all .4s ease-in;
+    -webkit-transition: all .4s ease-in;
+    -moz-transition: all .4s ease-in;
+    -o-transition: all .4s ease-in;
 }
 
 .overlay-container{
