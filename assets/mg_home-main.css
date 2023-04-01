@@ -27,7 +27,7 @@
 }    
 
 .overlay-text{
-    background-color: rgba(128, 128, 128, 0.5);
-    opacity: 0;
+    background-color: #000000;
+    opacity: 0.3;
     visibility: hidden;
 }
