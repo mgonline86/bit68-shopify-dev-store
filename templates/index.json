@@ -1,5 +1,25 @@
 {
   "sections": {
+    "mg_home_main": {
+      "type": "mg_home-main",
+      "blocks": {
+        "e288266f-adbc-40db-95a3-b8d8fb6619d7": {
+          "type": "column",
+          "settings": {
+            "mg__col_title": "Women",
+            "mg__col_action_title": "Shop",
+            "mg__col_action_url": "#",
+            "mg__col_image": "shopify:\/\/shop_images\/MyGroup_158.png"
+          }
+        }
+      },
+      "block_order": [
+        "e288266f-adbc-40db-95a3-b8d8fb6619d7"
+      ],
+      "settings": {
+        "mg__col": ""
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -14,7 +34,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
+            "button_link_1": "shopify:\/\/collections\/all",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -22,7 +42,10 @@
           }
         }
       },
-      "block_order": ["heading", "button"],
+      "block_order": [
+        "heading",
+        "button"
+      ],
       "settings": {
         "image_overlay_opacity": 40,
         "image_height": "large",
@@ -62,17 +85,11 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
-    },
-    "mg_home_main": {
-      "type": "mg_home-main",
-      "settings": {
-        "title": "[MG] Home Main",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body"
-      }
     }
   },
-  "order": ["mg_home_main", "image_banner", "featured_collection"]
+  "order": [
+    "mg_home_main",
+    "image_banner",
+    "featured_collection"
+  ]
 }
