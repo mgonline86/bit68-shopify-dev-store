@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="{{ 'mg_home-main.css' | asset_url }}">
 
 <div class="container">
-  <div class="row p-4 my-5 gap-3 flex-wrap">
+  <div class="row p-4 my-5 gap-3 row-cols-2">
     {% for col in section.blocks %}
         <div class="col-6 col-md w-100">
           <a href="{{col.settings.mg__col_action_url}}">
