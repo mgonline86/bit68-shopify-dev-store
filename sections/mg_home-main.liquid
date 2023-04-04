@@ -27,3 +27,30 @@
     </div>
 </div>
 
+{% schema %}
+{
+  "name": "[MG] Collections",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "mg_col_title",
+      "label": "Collections"
+    }
+  ],
+  "max_blocks": 5,
+  "blocks": [
+     {
+       "name": "Collection",
+       "type": "column",
+       "settings": [
+         {
+           "type": "image_picker",
+           "id": "mg_col_image",
+           "label": "Collection Image"
+         }
+       ]
+     }
+  ]
+}
+{% endschema %}
