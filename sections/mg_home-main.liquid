@@ -1,9 +1,9 @@
 <link rel="stylesheet" href="{{ 'mg_home-main.css' | asset_url }}">
 
 <div class="container">
-  <div class="row row-cols-2 p-4 my-5 gap-3">
+  <div class="row row-cols-2 p-4 my-5">
     {% for col in section.blocks %}
-        <div class="col-6 col-md w-100">
+        <div class="col py-2">
           <a href="{{col.settings.mg__col_action_url}}">
             <div class="card text-center text-bg-dark rounded-0 border border-dark border-2 overlay-container">
               <img src="{{ col.settings.mg__col_image | img_url: '683x866' }}" class="card-img" alt="{{col.settings.mg__col_title}}">
