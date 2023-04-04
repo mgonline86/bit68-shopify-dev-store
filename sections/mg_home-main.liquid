@@ -3,8 +3,7 @@
 <div class="container">
   <div class="row p-4 my-5 gap-3">
     {% for col in section.blocks %}
-        <h1>{{col.settings.mg__col_title}}</h1>
-        {% comment %} <div class="col-6 col-md w-100">
+        <div class="col-6 col-md w-100">
           <a href="{{col.mg__col_action_url}}">
             <div class="card text-center text-bg-dark rounded-0 border border-dark border-2 overlay-container">
               <img src="{{ col.mg__col_image | asset_url }}" class="card-img" alt="{{mg__col_title}}">
@@ -14,7 +13,7 @@
               </div>
             </div>
           </a>
-        </div> {% endcomment %}
+        </div>
     {% endfor %}
   </div>
 </div>
