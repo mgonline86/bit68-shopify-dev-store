@@ -2,24 +2,16 @@
 
 <div class="container">
   <div class="row p-4 my-5 gap-3">
+    {% for collection in section.settings.mg__col.blocks %}
+        
+    {% endfor %}
     <div class="col-6 col-md w-100">
-      <a href="#">
+      <a href="{{collection.mg__col_action_url}}">
         <div class="card text-center text-bg-dark rounded-0 border border-dark border-2 overlay-container">
-          <img src="{{ 'MyGroup 158.png' | asset_url }}" class="card-img" alt="Women_Collection">
+          <img src="{{ collection.mg__col_image | asset_url }}" class="card-img" alt="Women_Collection">
           <div class="card-img-overlay d-flex flex-column justify-content-center overlay-text">
-            <h1 class="card-title">Women</h1>
-            <span class="text-decoration-underline"><small>Shop now</small></span>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="col-6 col-md w-100">
-      <a href="#">
-        <div class="card text-center text-bg-dark rounded-0 border border-dark border-2 overlay-container">
-          <img src="{{ 'Myaustin-wade-d2s8NQ6WD24-unsplash.png' | asset_url }}" class="card-img" alt="Men_Collection">
-          <div class="card-img-overlay d-flex flex-column justify-content-center overlay-text">
-            <h1 class="card-title">Men</h1>
-            <span class="text-decoration-underline"><small>Shop now</small></span>
+            <h1 class="card-title">{{collection.mg__col_title}}</h1>
+            <span class="text-decoration-underline"><small>{{collection.mg__col_action_title}}</small></span>
           </div>
         </div>
       </a>
@@ -34,7 +26,7 @@
   "settings": [
     {
       "type": "text",
-      "id": "mg__col_name",
+      "id": "mg__col",
       "label": "Collections"
     }
   ],
