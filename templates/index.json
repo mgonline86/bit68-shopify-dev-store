@@ -20,11 +20,21 @@
             "mg__col_action_url": "#",
             "mg__col_image": "shopify:\/\/shop_images\/Myaustin-wade-d2s8NQ6WD24-unsplash.png"
           }
+        },
+        "48f80789-2c04-4e2b-81b4-b4dd0dd27f00": {
+          "type": "column",
+          "settings": {
+            "mg__col_title": "Third",
+            "mg__col_action_title": "Shop",
+            "mg__col_action_url": "#",
+            "mg__col_image": "shopify:\/\/shop_images\/MyGroup_158.png"
+          }
         }
       },
       "block_order": [
         "e288266f-adbc-40db-95a3-b8d8fb6619d7",
-        "8e1b6af1-5d00-4654-b7c7-0afe2e5fa2e9"
+        "8e1b6af1-5d00-4654-b7c7-0afe2e5fa2e9",
+        "48f80789-2c04-4e2b-81b4-b4dd0dd27f00"
       ],
       "settings": {
         "mg__col": ""
