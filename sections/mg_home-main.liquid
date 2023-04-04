@@ -6,7 +6,7 @@
         <div class="col-6 col-md w-100">
           <a href="{{col.settings.mg__col_action_url}}">
             <div class="card text-center text-bg-dark rounded-0 border border-dark border-2 overlay-container">
-              <img src="{{ col.settings.mg__col_image | asset_url }}" class="card-img" alt="{{col.settings.mg__col_title}}">
+              {{ col.settings.mg__col_image | image_url | image_tag: col.settings.mg__col_title, 'card-img'}}
               <div class="card-img-overlay d-flex flex-column justify-content-center overlay-text">
                 <h1 class="card-title">{{col.settings.mg__col_title}}</h1>
                 <span class="text-decoration-underline"><small>{{col.settings.mg__col_action_title}}</small></span>
