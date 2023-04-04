@@ -2,14 +2,14 @@
 
 <div class="container">
   <div class="row p-4 my-5 gap-3">
-    {% for collection in section.settings.mg__col.blocks %}
+    {% for col in section.settings.mg__col.blocks %}
         <div class="col-6 col-md w-100">
-          <a href="{{collection.mg__col_action_url}}">
+          <a href="{{col.mg__col_action_url}}">
             <div class="card text-center text-bg-dark rounded-0 border border-dark border-2 overlay-container">
-              <img src="{{ collection.mg__col_image | asset_url }}" class="card-img" alt="Women_Collection">
+              <img src="{{ col.mg__col_image | asset_url }}" class="card-img" alt="{{mg__col_title}}">
               <div class="card-img-overlay d-flex flex-column justify-content-center overlay-text">
-                <h1 class="card-title">{{collection.mg__col_title}}</h1>
-                <span class="text-decoration-underline"><small>{{collection.mg__col_action_title}}</small></span>
+                <h1 class="card-title">{{col.mg__col_title}}</h1>
+                <span class="text-decoration-underline"><small>{{col.mg__col_action_title}}</small></span>
               </div>
             </div>
           </a>
