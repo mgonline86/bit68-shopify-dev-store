@@ -1,30 +1,30 @@
 <link rel="stylesheet" href="{{ 'mg_home-main.css' | asset_url }}">
 
 <div class="container">
-    <div class="row p-4 my-5 gap-3">
-        <div class="col-6 col-md w-100">
-            <a href="#">
-                <div class="card text-center text-bg-dark rounded-0 border border-dark border-2 overlay-container">
-                    <img src="{{ 'MyGroup 158.png' | asset_url }}" class="card-img" alt="Women_Collection">
-                    <div class="card-img-overlay d-flex flex-column justify-content-center overlay-text">
-                        <h1 class="card-title">Women</h1>
-                        <span class="text-decoration-underline"><small>Shop now</small></span>
-                    </div>
-                </div>
-            </a>
+  <div class="row p-4 my-5 gap-3">
+    <div class="col-6 col-md w-100">
+      <a href="#">
+        <div class="card text-center text-bg-dark rounded-0 border border-dark border-2 overlay-container">
+          <img src="{{ 'MyGroup 158.png' | asset_url }}" class="card-img" alt="Women_Collection">
+          <div class="card-img-overlay d-flex flex-column justify-content-center overlay-text">
+            <h1 class="card-title">Women</h1>
+            <span class="text-decoration-underline"><small>Shop now</small></span>
+          </div>
         </div>
-        <div class="col-6 col-md w-100">
-            <a href="#">
-                <div class="card text-center text-bg-dark rounded-0 border border-dark border-2 overlay-container">
-                    <img src="{{ 'Myaustin-wade-d2s8NQ6WD24-unsplash.png' | asset_url }}" class="card-img" alt="Men_Collection">
-                    <div class="card-img-overlay d-flex flex-column justify-content-center overlay-text">
-                        <h1 class="card-title">Men</h1>
-                        <span class="text-decoration-underline"><small>Shop now</small></span>
-                    </div>
-                </div>
-            </a>
-        </div>
+      </a>
     </div>
+    <div class="col-6 col-md w-100">
+      <a href="#">
+        <div class="card text-center text-bg-dark rounded-0 border border-dark border-2 overlay-container">
+          <img src="{{ 'Myaustin-wade-d2s8NQ6WD24-unsplash.png' | asset_url }}" class="card-img" alt="Men_Collection">
+          <div class="card-img-overlay d-flex flex-column justify-content-center overlay-text">
+            <h1 class="card-title">Men</h1>
+            <span class="text-decoration-underline"><small>Shop now</small></span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
 </div>
 
 {% schema %}
@@ -34,23 +34,28 @@
   "settings": [
     {
       "type": "text",
-      "id": "mg_col_title",
+      "id": "mg__col_name",
       "label": "Collections"
     }
   ],
   "max_blocks": 5,
   "blocks": [
-     {
-       "name": "Collection",
-       "type": "column",
-       "settings": [
-         {
-           "type": "image_picker",
-           "id": "mg_col_image",
-           "label": "Collection Image"
-         }
-       ]
-     }
+    {
+      "name": "Collection",
+      "type": "column",
+      "settings": [
+        {
+          "type": "text",
+          "id": "mg__col_title",
+          "label": "Collections Title"
+        },
+        {
+          "type": "image_picker",
+          "id": "mg__col_image",
+          "label": "Collection Image"
+        }
+      ]
+    }
   ]
 }
 {% endschema %}
