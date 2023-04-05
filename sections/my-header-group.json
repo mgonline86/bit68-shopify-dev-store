@@ -5,6 +5,7 @@
     "header": {
       "type": "mg_header",
       "settings": {
+        "mg__head_logo": "shopify:\/\/shop_images\/LOGO.svg"
       }
     }
   },
