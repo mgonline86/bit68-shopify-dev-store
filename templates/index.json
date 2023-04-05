@@ -8,8 +8,8 @@
           "settings": {
             "mg__col_title": "Women",
             "mg__col_action_title": "Shop",
-            "mg__col_action_url": "#",
-            "mg__col_image": "shopify:\/\/shop_images\/MyGroup_158.png"
+            "mg__col_image": "shopify:\/\/shop_images\/MyGroup_158.png",
+            "mg__col_url": "#"
           }
         },
         "8e1b6af1-5d00-4654-b7c7-0afe2e5fa2e9": {
@@ -17,8 +17,8 @@
           "settings": {
             "mg__col_title": "Men",
             "mg__col_action_title": "Shop",
-            "mg__col_action_url": "#",
-            "mg__col_image": "shopify:\/\/shop_images\/Myaustin-wade-d2s8NQ6WD24-unsplash.png"
+            "mg__col_image": "shopify:\/\/shop_images\/Myaustin-wade-d2s8NQ6WD24-unsplash.png",
+            "mg__col_url": "#"
           }
         }
       },
