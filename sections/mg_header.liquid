@@ -27,12 +27,13 @@
                         </li>
                     </div>
                 </div>
-                
-                <li class="col-4">
-                    <a class="navbar-brand d-none d-lg-block w-100 text-center" href="#">
-                        <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" class="img-fluid" alt="Bootstrap" width="30" height="24">
-                    </a>
-                </li>
+                {% if section.mg__head_logo %}
+                    <li class="col-4">
+                        <a class="navbar-brand d-none d-lg-block w-100 text-center" href="#">
+                            <img src="{{ section.mg__head_logo | img_url: '102x41' }}" class="img-fluid" alt="Logo">
+                        </a>
+                    </li>
+                {% endif %}
                 
                 <div id="mg__header-start-list" class="col">
                     <div class="row flex-column flex-lg-row">
@@ -54,3 +55,16 @@
         </div>
     </div>
   </nav>
+
+  {% schema %}
+{
+  "name": "[MG] Header",
+  "settings": [
+    {
+        "type": "image_picker",
+        "id": "mg__head_logo",
+        "label": "Header Logo"
+    }
+  ]
+}
+{% endschema %}
