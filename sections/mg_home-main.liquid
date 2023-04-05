@@ -4,7 +4,7 @@
   <div class="row row-cols-1 row-cols-md-2 p-4 my-5">
     {% for col in section.blocks %}
         <div class="col py-2">
-          <a href="{{col.settings.mg__col_action_url}}">
+          <a href="{{col.settings.mg__col_url}}">
             <div class="card text-center text-bg-dark rounded-0 border border-dark border-2 overlay-container">
               <img src="{{ col.settings.mg__col_image | img_url: '683x866' }}" class="card-img" alt="{{col.settings.mg__col_title}}">
               <div class="card-img-overlay d-flex flex-column justify-content-center overlay-text">
@@ -46,14 +46,14 @@
           "label": "Collections Action Title"
         },
         {
-          "type": "url",
-          "id": "mg__col_action_url",
-          "label": "Collections Action Link"
-        },
-        {
           "type": "image_picker",
           "id": "mg__col_image",
           "label": "Collection Image"
+        },
+        {
+          "type": "url",
+          "id": "mg__col_url",
+          "label": "Collections Link"
         }
       ]
     }
